@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quantum Runner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="game-container">
+      <canvas id="game-canvas"></canvas>
+      <div id="hud">
+        <span id="turn-counter">Turn: 0</span>
+        <span id="futures-counter">Future: 0/0</span>
+      </div>
+      <div id="future-description"></div>
+      <div id="controls">
+        <button id="btn-accept" class="game-btn">Accept [Enter]</button>
+        <button id="btn-pass" class="game-btn">Pass [Space]</button>
+      </div>
+      <div id="screen-overlay" class="hidden"></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
